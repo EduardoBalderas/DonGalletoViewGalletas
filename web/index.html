@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Galletas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Don Galleto <br> Cookie</h2>
+        <ul>
+            <li><i class="fas fa-home"></i> Dashboard</li>
+            <li><i class="fas fa-chart-line"></i> Ventas</li>
+            <li><i class="fas fa-cookie-bite"></i> Galletas</li>
+            <li><i class="fas fa-boxes"></i> Materia Prima</li>
+            <li><i class="fas fa-file-alt"></i> Reportes de venta</li>
+            <li><i class="fas fa-edit"></i> Registro de insumos</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1 style="background: #493628; height: 80px;">Galletas</h1>
+            <div class="search" style="padding-left: 60px;">
+                <input type="text" placeholder="Buscar">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="btn-producir">Producir</button>
+        </div>
+        <div style="padding-left: 70px; padding-right: 50px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad en existencia</th>
+                        <th>Cantidad que se pueden hacer</th>
+                        <th>Receta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Galleta de nuez</td>
+                        <td>45</td>
+                        <td>83</td>
+                        <td><button class="btn-ver">Ver</button></td>
+                    </tr>
+                    <tr>
+                        <td>Galleta de Chocolate</td>
+                        <td>750</td>
+                        <td>56</td>
+                        <td><button class="btn-ver">Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #493628;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-family: 'Cursive', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.header h1 {
+    font-family: cursive;
+    font-size: 36px;
+    color: white;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.header input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.header .fas.fa-search {
+    position: absolute;
+    right: 10px;
+    color: gray;
+    pointer-events: none;
+}
+
+.header .btn-producir {
+    padding: 10px 20px;
+    background-color: #493628;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 0 1 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #eee;
+    font-family: 'Cursive', sans-serif;
+}
+
+table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.btn-ver,
+.btn-producir {
+    background-color: #493628;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header .search {
+        width: 100%;
+    }
+
+    .header input {
+        max-width: 100%;
+    }
+
+    .header .btn-producir {
+        width: 100%;
+        text-align: center;
+    }
+}
